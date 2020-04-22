@@ -41,5 +41,10 @@ A Spring Framework Application following the Spring Framework 5: Beginner to Gur
     - **_Easily Maintainable and Testable_**
     - **_Avoid tight Coupling in your code_**
     
+
+`April 20, 2020` 
+
+Spring Dependency Injection Concepts - git@github.com:crpdev/crp-di.git
+    
                                 `Happy Learning: crpdev`
-                       Last Activity Update: **_April 19, 2020_**
+                       Last Activity Update: **_April 21, 2020_**
