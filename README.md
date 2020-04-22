@@ -39,7 +39,7 @@ A Spring Framework Application following the Spring Framework 5: Beginner to Gur
 - Why _SOLID_ Principles in OOP?
     - **_Better Quality Code_**
     - **_Easily Maintainable and Testable_**
-    - **_Avoid tight Coupling in your code_**
+    - **_Avoid Tight Coupling in your code_**
     
 
 `April 20, 2020` 
