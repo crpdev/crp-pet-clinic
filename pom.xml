@@ -14,7 +14,7 @@
     </parent>
     <groupId>com.crpdev</groupId>
     <artifactId>crp-pet-clinic</artifactId>
-    <version>0.0.2</version>
+    <version>0.0.3-SNAPSHOT</version>
     <name>crp-pet-clinic</name>
     <description>CRP Pet Clinic Project</description>
 
@@ -60,7 +60,7 @@
 
     <scm>
         <developerConnection>scm:git:git@github.com:crpdev/crp-pet-clinic.git</developerConnection>
-      <tag>crp-pet-clinic-0.0.2</tag>
+      <tag>HEAD</tag>
   </scm>
 
 </project>
