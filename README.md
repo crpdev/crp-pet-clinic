@@ -45,6 +45,10 @@ A Spring Framework Application following the Spring Framework 5: Beginner to Gur
 `April 20, 2020` 
 
 Spring Dependency Injection Concepts - git@github.com:crpdev/crp-di.git
+
+`April 28, 2020`
+
+Spring Boot Jokes App Asignment - git@github.com:crpdev/jokes-app.git
     
                                 `Happy Learning: crpdev`
-                       Last Activity Update: **_April 21, 2020_**
+                       Last Activity Update: **_April 28, 2020_**
