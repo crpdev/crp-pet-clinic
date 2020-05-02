@@ -2,9 +2,11 @@ package com.crpdev.crppetclinic.services.map;
 
 import com.crpdev.crppetclinic.model.Owner;
 import com.crpdev.crppetclinic.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService {
 
     @Override
