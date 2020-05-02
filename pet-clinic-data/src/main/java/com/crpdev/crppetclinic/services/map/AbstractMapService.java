@@ -22,8 +22,9 @@ public abstract class AbstractMapService <T extends BaseEntity, ID extends Long>
             if (null == object.getId()){
                object.setId(getNextId());
             }
+            map.put(object.getId(), object);
         }
-        return map.put(object.getId(), object);
+        return object;
     }
 
     void deleteById(ID id){
@@ -36,12 +37,12 @@ public abstract class AbstractMapService <T extends BaseEntity, ID extends Long>
 
     private Long getNextId(){
 
-        Long nextId = null;
+        long nextId = 1L;
 
         try {
             nextId = Collections.max(map.keySet()) + 1;
         } catch (NoSuchElementException e){
-            nextId = 1L;
+            System.out.println("Setting to default 1L");
          }
 
         return nextId;
