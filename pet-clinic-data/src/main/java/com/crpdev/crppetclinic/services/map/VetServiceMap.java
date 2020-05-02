@@ -1,11 +1,11 @@
 package com.crpdev.crppetclinic.services.map;
 
 import com.crpdev.crppetclinic.model.Vet;
-import com.crpdev.crppetclinic.services.CrudService;
+import com.crpdev.crppetclinic.services.VetService;
 
 import java.util.Set;
 
-public class VetServiceMap extends AbstractMapService<Vet, Long> implements CrudService<Vet, Long> {
+public class VetServiceMap extends AbstractMapService<Vet, Long> implements VetService {
 
     @Override
     public Set<Vet> findAll() {
