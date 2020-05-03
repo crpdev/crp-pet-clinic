@@ -49,6 +49,41 @@ Spring Dependency Injection Concepts - git@github.com:crpdev/crp-di.git
 `April 28, 2020`
 
 Spring Boot Jokes App Asignment - git@github.com:crpdev/jokes-app.git
+
+`April 29, 2020`
+
+- Refactoring multi-module application: pet-clinic-data & pet-clinic-web
+
+`April 30, 2020`
+
+- Implementing the model and services
+    - Model
+        - Defining BaseEntity [Long: id] which is common to all model
+        - Person, Owner, Vet, Pet and PetType
+    - Services
+        - Implement base CRUD service
+        - Implement model specific service
+            - OwnerService
+            - PetService
+            - VetService
+            
+`May 01, 2020`
+            
+- Implementing Map Service
+    - AbstractMapService using Generics to be used by model map services
+        - OwnerServiceMap
+        - VetServiceMap
+        - PetServiceMap
+- Implementing Controller and draft templates for Owner and Vet
+
+`May 02, 2020`
+
+- Defining a DataLoader to load sample data at startup
+- Refactoring view templates to display data based on the sample data from DataLoader
+
+`May 03, 2020`
+
+Spring Boot - External Properties - git@github.com:crpdev/spring5-di-properties.git
     
                                 `Happy Learning: crpdev`
-                       Last Activity Update: **_April 28, 2020_**
+                       Last Activity Update: **_May 03, 2020_**
