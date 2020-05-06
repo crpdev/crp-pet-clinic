@@ -1,19 +1,20 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="~{fragments/layout :: layout (~{::body},'vets')}">
 <head>
     <meta charset="UTF-8">
     <title>Pet Clinic: List of Vets</title>
 </head>
 <body>
 <!--/*@thymesVar id="vet" type="com.crpdev.crppetclinic.model.Vet"*/-->
-<table>
+<h2>List of Vets</h2>
+<table class="table table-striped">
     <thead>
     <tr>
         <th>Id</th>
         <th>First Name</th>
         <th>Last Name</th>
     </tr>
-    </thead>hh
+    </thead>
     <tbody>
     <tr th:each="vet: ${vets}">
         <td th:text="${vet.id}"></td>
