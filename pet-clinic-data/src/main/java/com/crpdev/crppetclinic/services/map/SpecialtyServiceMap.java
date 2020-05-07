@@ -1,16 +1,16 @@
 package com.crpdev.crppetclinic.services.map;
 
-import com.crpdev.crppetclinic.model.Speciality;
-import com.crpdev.crppetclinic.services.SpecialitiesService;
+import com.crpdev.crppetclinic.model.Specialty;
+import com.crpdev.crppetclinic.services.SpecialtyService;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
-public class SpecialitiesServiceMap extends AbstractMapService<Speciality, Long> implements SpecialitiesService {
+public class SpecialtyServiceMap extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
-    public Set<Speciality> findAll() {
+    public Set<Specialty> findAll() {
         return super.findAll();
     }
 
@@ -20,17 +20,17 @@ public class SpecialitiesServiceMap extends AbstractMapService<Speciality, Long>
     }
 
     @Override
-    public void delete(Speciality object) {
+    public void delete(Specialty object) {
         super.delete(object);
     }
 
     @Override
-    public Speciality save(Speciality object) {
+    public Specialty save(Specialty object) {
         return super.save(object);
     }
 
     @Override
-    public Speciality findById(Long id) {
+    public Specialty findById(Long id) {
         return super.findById(id);
     }
 }
