@@ -1,6 +1,7 @@
 package com.crpdev.crppetclinic.bootstrap;
 
 import com.crpdev.crppetclinic.model.Owner;
+import com.crpdev.crppetclinic.model.Pet;
 import com.crpdev.crppetclinic.model.PetType;
 import com.crpdev.crppetclinic.model.Vet;
 import com.crpdev.crppetclinic.services.OwnerService;
@@ -8,6 +9,8 @@ import com.crpdev.crppetclinic.services.PetTypeService;
 import com.crpdev.crppetclinic.services.VetService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
+
+import java.time.LocalDate;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -38,12 +41,32 @@ public class DataLoader implements CommandLineRunner {
         Owner owner1 = new Owner();
         owner1.setFirstName("Rajapandian");
         owner1.setLastName("Chellimuthu");
+        owner1.setAddress("Ashok Nagar");
+        owner1.setCity("Chennai");
+        owner1.setTelephone("987654321");
+
+        Pet pet1 = new Pet();
+        pet1.setPetType(savedDog);
+        pet1.setOwner(owner1);
+        pet1.setBirthDate(LocalDate.now());
+        pet1.setName("DogPet");
+        owner1.getPets().add(pet1);
 
         ownerService.save(owner1);
 
         Owner owner2 = new Owner();
-        owner2.setFirstName("Gokul");
+        owner2.setFirstName("Gokulpandian");
         owner2.setLastName("Chellimuthu");
+        owner1.setAddress("Anna Nagar");
+        owner1.setCity("Chennai");
+        owner1.setTelephone("987654321");
+
+        Pet pet2 = new Pet();
+        pet2.setPetType(savedCat);
+        pet2.setOwner(owner1);
+        pet2.setBirthDate(LocalDate.now());
+        pet2.setName("CatPet");
+        owner1.getPets().add(pet2);
 
         ownerService.save(owner2);
 
