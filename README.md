@@ -84,6 +84,30 @@ Spring Boot Jokes App Asignment - git@github.com:crpdev/jokes-app.git
 `May 03, 2020`
 
 Spring Boot - External Properties - git@github.com:crpdev/spring5-di-properties.git
+
+`May 04, 2020`
+
+- Copy master templates and static resources from the Spring Pet Clinic project
+- Apply the template to index, owner, vets and pets pages
+- Configure WRO4J [Web Resource Optimise for Java] to manage and consolidate less files as css
+- Add missing i18n property files
+
+`May 05, 2020`
+
+- Created Visit, Speciality entities and associate to Vet
+- Added contact info property to Owner entity
+- DataLoader enhanced with Pet, PetType and Owner addons
+
+`May 06, 2020`
+
+- Create Speciality Map Service Implementation
+- DataLoader for Pet, PetType and Speciality
+
+`May 07, 2020`
+
+- Fixing broken links on the master template applied
+
+`May 08, 2020`
     
                                 `Happy Learning: crpdev`
-                       Last Activity Update: **_May 03, 2020_**
+                       Last Activity Update: **_May 08, 2020_**
