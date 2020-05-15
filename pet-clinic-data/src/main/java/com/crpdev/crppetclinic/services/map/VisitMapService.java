@@ -2,6 +2,7 @@ package com.crpdev.crppetclinic.services.map;
 
 import com.crpdev.crppetclinic.model.Visit;
 import com.crpdev.crppetclinic.services.VisitService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
@@ -13,6 +14,7 @@ import java.util.Set;
  * Package: com.crpdev.crppetclinic.services.map
  **/
 @Service
+@Profile({"default","map"})
 public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService {
 
     @Override

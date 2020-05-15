@@ -2,11 +2,13 @@ package com.crpdev.crppetclinic.services.map;
 
 import com.crpdev.crppetclinic.model.Specialty;
 import com.crpdev.crppetclinic.services.SpecialtyService;
+import org.springframework.context.annotation.Profile;
 import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
 @Service
+@Profile({"default","map"})
 public class SpecialtyMapService extends AbstractMapService<Specialty, Long> implements SpecialtyService {
 
     @Override
