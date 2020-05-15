@@ -17,11 +17,11 @@ import java.util.Set;
  **/
 @Service
 @Profile("jpa")
-public class VetServiceJpa implements VetService {
+public class VetJpaService implements VetService {
 
     private final VetRepository vetRepository;
 
-    public VetServiceJpa(VetRepository vetRepository) {
+    public VetJpaService(VetRepository vetRepository) {
         this.vetRepository = vetRepository;
     }
 
